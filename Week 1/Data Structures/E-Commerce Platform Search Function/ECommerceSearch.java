@@ -19,7 +19,7 @@ class Product {
     }
 }
 
-public class EcommerceSearch {
+public class ECommerceSearch {
 
     public static Product linearSearch(Product[] products, int targetId) {
         for (Product p : products) {

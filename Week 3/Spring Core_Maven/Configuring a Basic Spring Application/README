@@ -1,0 +1,113 @@
+Here's a complete and clean `README.md` file that you can include in your `LibraryManagement` Spring application project:
+
+---
+
+```markdown
+# 📚 LibraryManagement Spring Application
+
+This is a basic **Spring Framework** project configured using **XML-based configuration**. It demonstrates how to create and wire service and repository beans using Spring's IoC container.
+
+---
+
+## 🧩 Features
+
+- Java-based classes for `BookService` and `BookRepository`
+- Spring XML configuration (`applicationContext.xml`)
+- Demonstrates dependency injection using `<bean>` and `<property>`
+- Simple Maven project structure
+- Runs with a single main method (`MainApp.java`)
+
+---
+
+## 📁 Project Structure
+
+```
+
+LibraryManagement/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── library/
+│   │   │           ├── MainApp.java
+│   │   │           ├── service/
+│   │   │           │   └── BookService.java
+│   │   │           └── repository/
+│   │   │               └── BookRepository.java
+│   │   └── resources/
+│   │       └── applicationContext.xml
+└── pom.xml
+
+````
+
+---
+
+## 🛠️ Technologies Used
+
+- Java 8+
+- Spring Core (via Maven)
+- Maven (Project Management)
+- XML-based Spring Configuration (No Annotations)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/LibraryManagement.git
+cd LibraryManagement
+````
+
+### 2. Import into IDE
+
+* Open in **Eclipse** or **IntelliJ IDEA** as a **Maven project**
+
+### 3. Build the project
+
+```bash
+mvn clean install
+```
+
+### 4. Run the Application
+
+Run `MainApp.java` from your IDE or configure a Maven exec plugin to run it.
+
+---
+
+## ⚙️ applicationContext.xml Overview
+
+```xml
+<bean id="bookRepository" class="com.library.repository.BookRepository" />
+<bean id="bookService" class="com.library.service.BookService">
+    <property name="bookRepository" ref="bookRepository"/>
+</bean>
+```
+
+---
+
+## 🧪 Output (when running MainApp)
+
+```
+BookService: Adding book - Spring in Action
+BookRepository: Saving book - Spring in Action
+```
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repository and submit pull requests. Suggestions and improvements are welcome!
+
+---
+
+## 📜 License
+
+This project is for educational purposes and is licensed under the [MIT License](LICENSE).
+
+```
+
+---
+
+Let me know if you'd like the full project as a downloadable ZIP with this `README.md` file included!
+```

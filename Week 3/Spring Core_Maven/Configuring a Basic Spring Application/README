@@ -1,13 +1,6 @@
-Here's a complete and clean `README.md` file that you can include in your `LibraryManagement` Spring application project:
-
----
-
-```markdown
 # 📚 LibraryManagement Spring Application
 
 This is a basic **Spring Framework** project configured using **XML-based configuration**. It demonstrates how to create and wire service and repository beans using Spring's IoC container.
-
----
 
 ## 🧩 Features
 
@@ -40,16 +33,6 @@ LibraryManagement/
 
 ````
 
----
-
-## 🛠️ Technologies Used
-
-- Java 8+
-- Spring Core (via Maven)
-- Maven (Project Management)
-- XML-based Spring Configuration (No Annotations)
-
----
 
 ## 🚀 Getting Started
 
@@ -95,19 +78,3 @@ BookRepository: Saving book - Spring in Action
 
 ---
 
-## 🤝 Contributing
-
-Feel free to fork this repository and submit pull requests. Suggestions and improvements are welcome!
-
----
-
-## 📜 License
-
-This project is for educational purposes and is licensed under the [MIT License](LICENSE).
-
-```
-
----
-
-Let me know if you'd like the full project as a downloadable ZIP with this `README.md` file included!
-```

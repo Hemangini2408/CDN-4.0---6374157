@@ -1,0 +1,32 @@
+Create Tables:
+```sql
+CREATE TABLE Customers (
+    CustomerID NUMBER PRIMARY KEY,
+    Name VARCHAR2(50),
+    Age NUMBER,
+    Balance NUMBER(10,2),
+    InterestRate NUMBER(5,2),
+    IsVIP VARCHAR2(5)
+);
+CREATE TABLE Loans (
+    LoanID NUMBER PRIMARY KEY,
+    CustomerID NUMBER REFERENCES Customers(CustomerID),
+    DueDate DATE
+);
+```
+Insert Sample Data:
+```sql
+INSERT INTO Customers VALUES (101, 'Alice', 65, 15000.00, 8.5, 'FALSE');
+INSERT INTO Customers VALUES (102, 'Bob', 45, 8500.00, 9.0, 'FALSE');
+INSERT INTO Customers VALUES (103, 'Carol', 70, 11000.00, 8.0, 'FALSE');
+INSERT INTO Customers VALUES (104, 'David', 30, 12000.00, 9.5, 'FALSE');
+INSERT INTO Loans VALUES (201, 101, SYSDATE + 10);
+INSERT INTO Loans VALUES (202, 102, SYSDATE + 40);
+INSERT INTO Loans VALUES (203, 103, SYSDATE + 25);
+INSERT INTO Loans VALUES (204, 104, SYSDATE + 5);
+COMMIT;
+```
+Alter Table (if needed):
+```sql
+ALTER TABLE Customers MODIFY IsVIP VARCHAR2(5);
+```

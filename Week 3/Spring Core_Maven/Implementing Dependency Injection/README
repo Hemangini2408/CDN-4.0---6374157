@@ -1,0 +1,37 @@
+# 📚 Library Management Application (Spring XML-Based Dependency Injection)
+
+This is a basic Java application demonstrating how to use **Spring Framework's Dependency Injection (DI)** using **XML configuration** in a **Library Management System**.
+
+---
+
+## 🚀 Features
+
+- Demonstrates **Setter-based Dependency Injection** using Spring.
+- Uses **Maven** for build and dependency management.
+- Simple modular structure with `Book`, `BookService`, and `BookRepository`.
+
+---
+
+## 🛠️ Technologies Used
+
+- Java 8+
+- Spring Framework (v5.3.x)
+- Maven
+- Eclipse IDE
+
+---
+
+## 📁 Project Structure
+
+LibraryManagementApp/
+├── src/
+│ └── com/example/library/
+│ ├── Book.java
+│ ├── BookRepository.java
+│ ├── BookService.java
+│ └── LibraryManagementApplication.java
+├── applicationContext.xml
+├── pom.xml
+
+
+

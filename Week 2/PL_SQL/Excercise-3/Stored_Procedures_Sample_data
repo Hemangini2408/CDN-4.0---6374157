@@ -1,0 +1,14 @@
+Sample Table:
+
+CREATE TABLE SavingsAccounts (
+    AccountID NUMBER PRIMARY KEY,
+    CustomerName VARCHAR2(50),
+    Balance NUMBER(10, 2)
+);
+
+Sample Data:
+
+INSERT INTO SavingsAccounts VALUES (1, 'Alice', 10000);
+INSERT INTO SavingsAccounts VALUES (2, 'Bob', 8000);
+INSERT INTO SavingsAccounts VALUES (3, 'Carol', 15000);
+COMMIT;

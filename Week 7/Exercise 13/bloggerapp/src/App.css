@@ -1,0 +1,12 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.section {
+  border-left: 2px solid green;
+  padding-left: 20px;
+}
